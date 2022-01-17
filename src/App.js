@@ -7,6 +7,7 @@ import { useState } from "react";
 import Home from "./pages/Home/Home";
 import Form from "./pages/Form/Form";
 import About from "./pages/About/About";
+import Navbar from "./components/navbar";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <LangProvider value={{ lang, setLang }}>
           <div dir={lang == "en" ? "ltr" : "rtl"}>
+          <Navbar />
             <Switch>
               <Route path="/favourite" exact component={Favourites} />
               <Route path="/" exact component={Home} />
