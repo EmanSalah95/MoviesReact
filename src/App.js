@@ -5,6 +5,7 @@ import store from "./store/store";
 import { LangProvider } from "./context/langContext";
 import { useState } from "react";
 import Home from "./pages/Home/Home";
+import Form from "./pages/Form/Form";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -16,6 +17,7 @@ function App() {
             <Switch>
               <Route path="/favourite" exact component={Favourites} />
               <Route path="/" exact component={Home} />
+              <Route path="/register" exact component={Form} />
             </Switch>
           </div>
         </LangProvider>
