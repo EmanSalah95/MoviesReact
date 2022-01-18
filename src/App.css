@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.list{
+  min-height: 35vh;
+}
+
+/* movie card */
+.fixedLines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.bi{
+  font-size: 3em;
+  margin: 20px;
+
+}
+.counter {
+  position: absolute !important;
+  padding: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  color: #ffffff;
+  background-color: #6C757D;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  line-height: 18px !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  cursor: pointer;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  right: 0 !important; 
+  }
+
+  .movie-card{
+     /* height: 400px; */
+  }
